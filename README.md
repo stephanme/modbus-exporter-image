@@ -2,6 +2,9 @@
 
 Builds a docker image for [RichiH/modbus_exporter](https://github.com/RichiH/modbus_exporter) so that the modbus_exporter can be installed easily in a k8s cluster.
 
+- small images based on alpine
+- built for amd64 and arm architecture (WIP)
+
 ## Example Deployment
 
 See `modbus-exporter-example.yml`. The `modbus.yml` configuration file is provided as ConfigMap.
