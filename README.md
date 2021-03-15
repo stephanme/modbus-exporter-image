@@ -7,7 +7,7 @@ Builds a docker image for [RichiH/modbus_exporter](https://github.com/RichiH/mod
 
 ## Example Deployment
 
-See `modbus-exporter-example.yml`. The `modbus.yml` configuration file is provided as ConfigMap.
+See `modbus-exporter-example.yaml`. The `modbus.yml` configuration file is provided as ConfigMap.
 
 Sample access with port forwarding:
 - http://localhost:9602/metrics
@@ -23,3 +23,11 @@ docker build -t stephanme/modbus_exporter .
 # full rebuild (update base image and chrome)
 docker build --pull --no-cache -t stephanme/modbus_exporter .
 ```
+
+## Release
+
+Tag this repo and a tagged docker image with the same version will be published.
+
+[Release notes](https://github.com/stephanme/modbus-exporter-image/releases)
+- Version schema is independent of [RichiH/modbus_exporter](https://github.com/RichiH/modbus_exporter). I try to follow semver.
+- Most important info is the referenced commit id of [RichiH/modbus_exporter](https://github.com/RichiH/modbus_exporter).
