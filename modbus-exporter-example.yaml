@@ -16,13 +16,12 @@ spec:
     spec:
       containers:
         - name: modbus-exporter
-          image: stephanme/modbus_exporter:main
-          imagePullPolicy: Always # for :main, remove when versioned
+          image: stephanme/modbus_exporter:latest
           ports:
             - containerPort: 9602
           command:
             - ./modbus_exporter
-            - -config.file
+            - --config.file
             - /app/config/modbus.yml
           volumeMounts:
             - name: config
