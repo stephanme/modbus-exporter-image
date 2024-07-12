@@ -15,13 +15,13 @@ Sample access with port forwarding:
 
 ## Build
 
-The images are built and pushed to dockerhub by a github action.
+The images are built and pushed to ghcr.io by a github action.
 
 Manual local build:
 ```
-docker build -t stephanme/modbus_exporter .
+docker build -t ghcr.io/stephanme/modbus_exporter .
 # full rebuild (update base image and chrome)
-docker build --pull --no-cache -t stephanme/modbus_exporter .
+docker build --pull --no-cache -t ghcr.io/stephanme/modbus_exporter .
 ```
 
 ## Release
