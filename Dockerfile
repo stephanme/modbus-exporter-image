@@ -1,4 +1,4 @@
-FROM golang:1.25.5-alpine AS builder
+FROM golang:1.26.0-alpine AS builder
 ADD ./modbus_exporter /go/modbus_exporter
 WORKDIR /go/modbus_exporter
 RUN go build
